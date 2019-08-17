@@ -1,12 +1,14 @@
 # Example using [Yarn](https://yarnpkg.com/en/) workspaces in an [Expo](https://expo.io/) app with [Lerna](https://lerna.js.org/)
 
 ## Start
+```
 $ git clone https://github.com/stephenhandley/expoyarnlerna
 $ cd expoyarnlerna
 $ yarn
 $ yarn bootstrap
 $ yarn build
 $ yarn start:app
+```
 
 ## Rough process
 1. Setup new project with Lerna
@@ -25,6 +27,8 @@ You may need an appropriate loader to handle this file type.
 6. Make `package.json` and `babel.config.js` files parallel the ones here
 
 ## Versions
+```
 Expo 34.0.1
 Lerna 3.16.4
 Yarn 1.12.3
+```
