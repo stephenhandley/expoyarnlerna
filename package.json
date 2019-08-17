@@ -1,0 +1,26 @@
+{
+  "name": "root",
+  "private": true,
+  "description": "Example using Yarn workspaces in an Expo app with Lerna",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "rebootstrap": "yarn clean && yarn bootstrap",
+    "lint": "lerna exec --parallel -- yarn lint",
+    "clean": "lerna exec --parallel -- rm -rf node_modules",
+    "build": "lerna exec --parallel --scope @quaid/shared* -- babel --watch --root-mode upward src -d build --ignore **/*.stories.js,**/*.test.js",
+    "start:app": "lerna exec --scope @quaid/app -- yarn start"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/core": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.6",
+    "babel-preset-expo": "^5.2.0",
+    "lerna": "3.16.4",
+    "webpack": "4.39.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
