@@ -26,6 +26,11 @@ You may need an appropriate loader to handle this file type.
 ```
 6. Make `package.json` and `babel.config.js` files parallel the ones here
 
+## Troubleshooting 
+First three steps are pretty straightforward, but make sure you follow step 4 closely. After that step, you can verify the package import is working by exporting something not requiring babel and importing that into the Expo app package and verifying everything renders ok. 
+
+Steps 5 and 6 are adapted from [this repo](https://github.com/Hy-Vee/lerna-yarn-workspaces-monorepo). If you're having issues with getting babel working, there's an associated [blog post](https://medium.com/hy-vee-engineering/creating-a-monorepo-with-lerna-yarn-workspaces-cf163908965d) walking through that setup in more detail in addition to getting Jest testing and Storybooks setup. 
+
 ## Versions
 ```
 Expo 34.0.1
