@@ -1,6 +1,6 @@
 # Example using [Yarn](https://yarnpkg.com/en/) workspaces in an [Expo](https://expo.io/) app with [Lerna](https://lerna.js.org/)
 
-## Start
+## Running example
 ```
 $ git clone https://github.com/stephenhandley/expoyarnlerna
 $ cd expoyarnlerna
@@ -10,7 +10,7 @@ $ yarn build
 $ yarn start:app
 ```
 
-## Rough process
+## Process
 1. Setup new project with Lerna
 2. Create Expo app in `packages/app`
 3. Create shared package in `packages/shared`
@@ -19,7 +19,7 @@ $ yarn start:app
 ```
 yarn add --dev -W @babel/cli @babel/core @babel/preset-react @babel/preset-env babel-preset-expo babel-loader webpack
 ```
-Without this you'll see Expo app barf on JSX, etc.
+Without this you'll see your Expo app barf on JSX, etc.
 ```
 Module parse failed: Unexpected token (4:9)
 You may need an appropriate loader to handle this file type.
